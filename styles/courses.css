@@ -21,18 +21,18 @@
   padding: 0;
   padding-left: 35px;
 }
-.course-related-topics .listOfCourses {
+.listOfCourses {
   font-family: sans-serif;
   font-weight: bold;
   color: grey;
-  padding-right: 15px;
+  padding-right: 45px;
   padding-top: 10px;
 }
 .listOfCourses :hover {
   color: rgb(0, 0, 0);
 }
-.active {
-  color: black !important;
+.listOfCourses.active {
+  color: black ;
 }
 a {
   text-decoration: none;
@@ -47,6 +47,7 @@ li {
   border: 1px solid rgb(187, 187, 187);
   padding: 25px;
   padding-bottom: 10px;
+  padding-right: 18px;
   margin-left: 35px;
   margin-right: 35px;
 }
@@ -81,34 +82,40 @@ li {
 .checked {
   color: orange;
 }
-.course-preview-container {
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  column-gap: 10px;
-
-}
-.course-img img {
-  width: 100%;
-  border: 1px solid rgb(214, 214, 214);
-}
-.course-preview {
-  margin: 15px 0px;
-}
-.course-info div {
-  padding: 5px 0 0 0;
+.card-title{
   font-weight: bold;
 }
-.course-info .course-description {
-  padding: 5px 0 0 0;
-  font-weight: bold;
-}
-.course-info .course-author {
+.card-author{
   font-size: 13px;
   color: gray;
   font-weight: 100;
 }
-.students {
-  font-weight: 200;
-  color: gray;
+.card-rate .students,
+.card-price{
+  font-size: 15px;
+  font-weight: 700;
+  color: grey;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.items-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+.card-img-top{
+  border: 1px solid rgba(0, 0, 0, 0.243);
+}
+.carousel-control-prev,
+.carousel-control-next{
+  background-color: #e1e1e1;
+  width: 4vh;
+  height: 4vh;
+  border-radius: 50%;
+  top: 25%;
+  transform: translateY(-50%);
+}
+
+.cato{
+  margin: 30px;
 }
