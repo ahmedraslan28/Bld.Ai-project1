@@ -14,7 +14,7 @@
   .language {
     display: none;
   }
-  .add-to-card {
+  .add-to-cart {
     display: none;
   }
   .categories-container {
@@ -23,14 +23,18 @@
   .search-bar-container {
     display: none;
   }
-  .nav{
+  nav{
     flex-direction: row-reverse;
+    height: 65px;
   }
   .udemy-logo{
     padding-right: 0; 
   }
   .toogle-btn {
     display: flex;
+  }
+  .course-preview-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 @media screen and (max-width: 700px) {
@@ -47,9 +51,12 @@
   .course-text-container{
     visibility: hidden;
   }
+  .course-preview-container{
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
 }
 @media screen and (max-width: 590px){
   .course-preview-container{
-    /* justify-content: space-evenly; */
+    grid-template-columns: 1fr;
   }
 }
