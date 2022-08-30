@@ -29,7 +29,7 @@
       </a>
     </div>
     <div class="search-bar-container">
-      <button class="search-icon-btn" type="submit">
+      <button class="search-icon-btn" type="submit" onclick="document.querySelector('.courses').scrollIntoView();">
         <img class="search-icon" src="icons/search.png" alt="" height="15" />
       </button>
       <input class="search-bar" type="text" placeholder="Search for anything" />
@@ -115,16 +115,16 @@
         <button type="button" class="Explore-btn">Explore python</button>
       </div>
       <div class="course-preview-container">
-        <div id="C1" class="carousel carousel-dark slide d-none d-md-block" data-bs-ride="carousel">
+        <div id="C1" class="carousel carousel-dark slide d-none d-md-block" data-interval="false">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="items-container one">
 
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item second">
               <div class="items-container two">
-                
+
               </div>
             </div>
           </div>
@@ -138,32 +138,8 @@
           </button>
         </div>
 
-        <div id="carouselExampleControls" class="carousel carousel-dark slide d-md-none" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel carousel-dark slide d-md-none" data-interval="false">
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              
-            </div>
-            <div class="carousel-item">
-              
-            </div>
-            <div class="carousel-item">
-              
-            </div>
-            <div class="carousel-item">
-             
-            </div>
-            <div class="carousel-item">
-             
-            </div>
-            <div class="carousel-item">
-              
-            </div>
-            <div class="carousel-item">
-              
-            </div>
-            <div class="carousel-item">
-              
-            </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
             data-bs-slide="prev">
@@ -182,75 +158,51 @@
     <section class="cato">
       <h3 class="text-sm text-center my-3 mb-5">Top Categories</h3>
       <div class="row">
-
         <div class="col-lg-3 col-md-4 col-sm-6 text-center category">
-          <img
-            class="img-fluid"
-            src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"
-            alt="Design"
-          />
+          <img class="img-fluid" src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"
+            alt="Design" />
           <div class="my-3 fw-bold">Design</div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 text-center category">
-          <img
-            class="img-fluid"
-            src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg"
-            alt="Development"
-          />
+          <img class="img-fluid" src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg"
+            alt="Development" />
           <div class="my-3 fw-bold">Development</div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 text-center category">
-          <img
-            class="img-fluid"
-            src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg"
-            alt="Marketing"
-          />
+          <img class="img-fluid" src="https://s.udemycdn.com/home/top-categories/lohp-category-marketing-v2.jpg"
+            alt="Marketing" />
           <div class="my-3 fw-bold">Marketing</div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 text-center category">
-          <img
-            class="img-fluid"
-            src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg"
-            alt="IT and Software"
-          />
+          <img class="img-fluid" src="https://s.udemycdn.com/home/top-categories/lohp-category-it-and-software-v2.jpg"
+            alt="IT and Software" />
           <div class="my-3 fw-bold">IT and Software</div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 text-center category">
-          <img
-            class="img-fluid"
+          <img class="img-fluid"
             src="https://s.udemycdn.com/home/top-categories/lohp-category-personal-development-v2.jpg"
-            alt="personal-development"
-          />
+            alt="personal-development"/>
           <div class="my-3 fw-bold">Personal Development</div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 text-center category">
-          <img
-            class="img-fluid"
-            src="https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg"
-            alt="Business"
-          />
+          <img class="img-fluid" src="https://s.udemycdn.com/home/top-categories/lohp-category-business-v2.jpg"
+            alt="Business" />
           <div class="my-3 fw-bold">Business</div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 text-center category">
-          <img
-            class="img-fluid"
-            src="https://s.udemycdn.com/home/top-categories/lohp-category-photography-v2.jpg"
-            alt="Photography"
-          />
+          <img class="img-fluid" src="https://s.udemycdn.com/home/top-categories/lohp-category-photography-v2.jpg"
+            alt="Photography" />
           <div class="my-3 fw-bold">Photography</div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 text-center category">
-          <img
-            class="img-fluid"
-            src="https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg"
-            alt="Music"
-          />
+          <img class="img-fluid" src="https://s.udemycdn.com/home/top-categories/lohp-category-music-v2.jpg"
+            alt="Music" />
           <div class="my-3 fw-bold">Music</div>
         </div>
       </div>
     </section>
   </main>
-  
+
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

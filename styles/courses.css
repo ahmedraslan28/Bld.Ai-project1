@@ -119,3 +119,17 @@ li {
 .cato{
   margin: 30px;
 }
+
+.img-fluid:hover{
+  transform: scale(1.1);
+}
+.img-fluid,.card{
+  transition: transform .7s;
+}
+.card:hover{
+  transform: scale(1.009);
+}
+.img-fluid{
+  width: 270px; 
+  height: 265px;
+}
